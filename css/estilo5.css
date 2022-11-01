@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	/*background-color: #33a5d6;*/
+	background-image:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../imagenes/pl.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+    padding: 100px;
+    font-family: 'Copperplate Gothic Bold','Agency FB';
+}
+
+h1{
+	font-size: 60px;
+	text-align: center;
+	color: white;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background: linear-gradient(cyan,white);
+    -webkit-background-clip: text;
+    color: transparent;  
+}	
+
+h2{
+	font-size: 60px;
+	text-align: center;
+	color: white;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background: linear-gradient(cyan,white);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+input[type="text"], input[type="password"], input[type="email"]
+{
+	width: 380px;
+	padding: 10px;
+	color: ;
+	margin-bottom: 15px;
+	margin-top: 1px;	
+
+} 
+
+input[type="text"], input[type="password"], input[type="email"]
+{
+	width: 380px;
+	padding: 10px;
+	color: ;
+	margin-bottom: 15px;
+	margin-top: 1px;	
+
+} 
+
+input[type="submit"]{
+			border: 0;
+			width: 10%;
+			background-color: #D1D2D2;
+			padding: 10px 20px;
+			position: relative;
+			left: 1px;
+			bottom: 12px;
+			border-radius: 10px;
+		}
+
+.btn-green{
+	font-size: 20px;
+	color: white;
+	background-color: #3CC93F;
+}
+
+.btn-green:hover{
+	background-color: #37B839;	
+}
+.btn-green:active{
+	background-color: #29962A;
+}
+
+ input{
+			border: 0;
+			outline: none;
+			border-radius: 10px;
+			
+		}
+       .field{
+			border: solid 1px #ccc;
+			border-radius: 4px 4px 4px 4px; 
+			padding: 10px;
+			width: 20px;
+			 
+		}
+
+   		.field:focus{
+			border-color: #18A383;
+		}
+
+
+
+a{
+	text-decoration: none;
+	color: black;
+}
+button{
+	border: 0;
+	width: 10%;
+	background-color: #D1D2D2;
+	padding: 10px 20px;
+	position: relative;
+	left: 1px;
+	bottom: 12px;
+	border-radius: 10px;
+	color: white;
+}
