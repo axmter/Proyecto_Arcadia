@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> </title>
+</head>
+<body>
+
+</body>
+</html>
+<?php
+
+echo "<pre>";
+
+$h=$_POST["horas"];
+$nombre=$_POST["nombre"];
+
+print_r($_POST);
+
+echo "<h2>Cálculo del sueldo semanal de un empleado</h2>";
+echo "<hr>";
+//operacion
+$smlv= 1000000;
+if ($h<=40) {
+$salario_basico = $h * 3000;
+$salario_devengado=$salario_basico;
+$subsidio_Transporte=(117172/30) * 7;
+$deducciones=$salario_devengado * 0.08;
+$salario_neto=$salario_devengado-$deducciones+$subsidio_Transporte;
+
+
+echo "El sueldo semanal del empleado <b>$nombre</b> es equivalente a: <b>COP</b> $".round($salario_neto,2);
+
+}elseif ($h>40) {
+$salario_basico=40*3000;
+$h_extras= $h -40;
+$Valor_extras=$h_extras*5000;
+$salario_devengado=$salario_basico+$Valor_extras;
+$subsidio_Transporte=(117172/30)*7;
+$deducciones=$salario_devengado*0.08;
+$salario_neto=$salario_devengado-$deducciones+$subsidio_Transporte;
+echo "El sueldo semanal del empleado <b>$nombre</b> es equivalente a: <b>COP</b> $".round($salario_neto,2);
+}?>

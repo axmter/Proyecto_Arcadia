@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+}
+
+.container form {
+    padding: 20px;
+    width: 500px;
+    background: rgb(3, 80, 97);
+    box-shadow: 20px 1px rgb(105, 155, 176);
+    justify-content: center;
+}
+
+.container form .row .col .title {
+    font-size: 30px;
+    color: rgb(250, 189, 5);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container form .row .col .inputBox {
+    margin: 10px 0;
+}
+
+.container form .row .col .inputBox2 {
+    margin: 30px 0;
+}
+
+.container form .row .col .inputBox span {
+    margin-bottom: 10px;
+    display: block;
+    color: #61b9f4;
+}
+
+.container form .row .col .inputBox2 {
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+.container form .row .col .inputBox2 span {
+    color: #f7b603;
+}
+
+.container form .row .col .inputBox input {
+    width: 50%;
+    border: 1px solid rgb(193, 246, 5);
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus {
+    border: 5px solid rgb(66, 242, 7);
+}
+
+.container form .row .col .flex .inputBox {
+    margin-top: 5px;
+}
+
+.container form .submit-btn {
+    width: 100%;
+    padding: 20px;
+    font-size: 17px;
+    background: #027cf5;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 90px;
+}
+
+.container form .submit-btn:hover {
+    background: #2ecc71;
+}

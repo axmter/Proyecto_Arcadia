@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- enlace de archivo CSS personalizado  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="pago.php" method="Post">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">DIRECCIÓN DE ENVIO</h3>
+
+                    <div class="inputBox">
+                        <span>nombre completo :</span>
+                        <input type="text" placeholder="ingresar nombre completo" required="" name="nombre">
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" placeholder="example@example.com" required="" name="email">
+                    </div>
+                    <div class="inputBox">
+                        <span>direccion :</span>
+                        <input type="text" placeholder="Barrio - calle - avenida" required="" name="direccion">
+                    </div>
+                    <div class="inputBox">
+                        <span>ciudad :</span>
+                        <input type="text" placeholder="Medellin" required="" name="ciudad">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Departamento :</span>
+                                <input type="text" placeholder="Medellin" required="" name="Departamento">
+                        </div>
+                        <div class="inputBox">
+                            <span>codigo postal :</span>
+                            <input type="text" placeholder="123 456" required="" name="codpostal">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <h3 class="title">pago</h3>
+
+                    <div class="inputBox">
+                        <span>tarjetas aceptadas :</span>
+                        <img src="images/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>nombre en la tarjeta :</span>
+                        <input type="text" placeholder="ingresar nombre en la tarjeta" required="" name="tarj">
+                    </div>
+                    <div class="inputBox">
+                        <span>Número de Tarjeta de Crédito :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444" required="" name="tarjnum">
+                    </div>
+                    <div class="inputBox">
+                        <span>mes de caducidad :</span>
+                        <input type="text" placeholder="Enero" required="" name="tarjmes">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>año de caducidad :</span>
+                            <input type="number" placeholder="2022" required="" name="tarjcad">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234" required="" name="cvv">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" value="pasar por la caja" class="submit-btn">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
